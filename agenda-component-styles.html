@@ -1,0 +1,45 @@
+<dom-module id="agenda-component-styles"><template><style>
+:host {
+  display: block;
+  box-sizing: border-box;
+  font-family: var(--cells-fontDefault, sans-serif);
+  @apply --agenda-component; }
+
+:host([hidden]),
+[hidden] {
+  display: none !important; }
+
+*,
+*:before,
+*:after {
+  font: inherit;
+  box-sizing: inherit; }
+
+h1 {
+  font-size: 1.8em;
+  text-align: center; }
+
+table {
+  margin-top: 2%;
+  width: 100%; }
+
+table th {
+  padding: 10px;
+  background-color: #000;
+  color: #fff; }
+
+table td {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc; }
+
+.buton-container {
+  text-align: center;
+  margin-top: 2%; }
+
+.btn-icon {
+  flex-shrink: 0;
+  padding: 0 0.25em;
+  @apply --cells-st-button-composed-icon; }
+
+</style></template></dom-module>
