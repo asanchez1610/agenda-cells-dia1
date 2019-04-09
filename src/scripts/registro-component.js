@@ -39,6 +39,7 @@
         alias: { value: '', type: String },
         telefono: { value: '', type: String },
         inputError: { value: 'Hola', type: String },
+        timeout: { value: 1000, type: Number },
         datos: {
           value: [],
           type: Array,
@@ -102,7 +103,7 @@
           id="alerta" 
           type="error" 
           text="Por favor ingrese el [[inputError]]" 
-          timeout="1000">
+          timeout=[[timeout]] >
           </cells-molecule-alert-slide>   
                 
 
